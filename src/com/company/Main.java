@@ -22,7 +22,7 @@ public class Main {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(filename));
             while ((line = reader.readLine()) != null) {
-                String[] parts = line.split("\t");
+                String[] parts = line.split("\\s+");
                 if (parts.length >= 2) {
                     String keyString = parts[0];
                     int key = Integer.parseInt(keyString);
